@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    background-size: fit;
+    background-image: url(images/kaleidoscope.gif);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav nav" "main main main" "form form form" "footer footer footer";
+}
+
+header {
+    display: none;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    background-color: rgb(26, 26, 26);
+    padding: 0;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    pointer-events: none;
+}
+
+nav>ul>li:hover ul {
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
+}
+
+li {
+    color: white;
+}
