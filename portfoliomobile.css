@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: fit;
+    background-image: url(images/kaleidoscope.gif);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav nav" "main main main" "form form form" "footer footer footer";
+}
+
+.shownav:before :hover {
+    cursor: pointer;
+}
+
+.shownav {
+    height: 1em;
+    width: 1.7em;
+    display: block;
+    border-top: 0.3em solid white;
+    border-bottom: 0.3em solid white;
+    border-radius: 0.15em;
+}
+
+.shownav:before {
+    content: '';
+    position: absolute;
+    width: 1.7em;
+    margin-top: 0.4em;
+    border-top: 0.3em solid white;
+}
+
+nav {
+    display: none;
+    background-color: rgb(19, 19, 19);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    position: fixed;
+    grid-area: nav;
+    justify-content: space-around;
+    left: 60%;
+    width: 40%;
+    height: 100vh;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+nav>ul>li:not(:first-of-type) {
+    margin-top: 3em;
+}
+
+li:not(:first-of-type) {
+    margin-top: 3em;
+}
+
+li:not(:last-of-type) {
+    margin-bottom: 3em;
+}
+
+#clicked .shownav {
+    display: block;
+}
+
+#clicked .off {
+    display: none;
+}
+
+#clicked:target .shownav {
+    display: none;
+}
+
+#clicked:target .off {
+    display: block;
+    color: rgb(255, 0, 0);
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    position: absolute;
+    z-index: 5;
+}
+
+#clicked:target nav {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    color: white;
+}
+
+.Other {
+    color: rgb(19, 19, 19);
+}
