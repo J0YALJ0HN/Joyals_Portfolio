@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="desktop.css" />
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="indexdesktop.css" media="screen and (min-width:1000px)" />
+    <link rel="stylesheet" href="indexmobile.css" media="screen and (max-width: 1000px)" />
     <link rel="icon shortcut" type="image/icon" href="images/Logo.ico">
     <title>Joyal's Portfolio</title>
 </head>
@@ -14,14 +14,15 @@
 <body id="clicked" class="home">
     <header>
         <a href="#clicked" class="shownav"></a>
-        <a href="#" class="off">X</a>
+        <a href="#" class="off"> X</a>
     </header>
-    <nav>
+    <nav class="navigation">
         <ul>
             <li>
                 <a href="index.html">Home</a>
             </li>
-            <li>Other
+            <li>
+                <a href="#" class="Other">Other</a>
                 <ul>
                     <li>
                         <a href="blog.html">My Blog</a>
@@ -37,6 +38,9 @@
             </li>
         </ul>
     </nav>
+    <main class="index">
+
+    </main>
 </body>
 
 </html>
