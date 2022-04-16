@@ -88,6 +88,16 @@
         width: 40%;
         height: 100vh;
         text-align: center;
+        animation: slide-in 1000ms;
+    }
+    
+    @keyframes slide-in {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0%);
+        }
     }
     
     .Home {
