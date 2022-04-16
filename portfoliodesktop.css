@@ -3,8 +3,87 @@
     padding: 0;
 }
 
+.header {
+    background-color: black;
+    width: 100vw;
+    height: 65px;
+    text-align: center;
+    grid-area: header;
+    margin-bottom: 1em;
+}
+
 h1 {
+    color: rgb(255, 255, 255);
+    float: initial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+
+h2 {
     color: white;
+    float: initial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-style: italic;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "square1 square2 square3 square4" "square5 square6 square7 square8";
+    font-family: 'Courier New', Courier, monospace;
+    color: coral;
+    text-decoration: none;
+}
+
+.portfolio section {
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+.link,
+.link2,
+.link3,
+.link4,
+.link5,
+.link6,
+.link7,
+.link8 {
+    color: coral;
+}
+
+.p1 {
+    grid-area: square1;
+}
+
+.p2 {
+    grid-area: square2;
+}
+
+.p3 {
+    grid-area: square3;
+}
+
+.p4 {
+    grid-area: square4;
+}
+
+.p5 {
+    grid-area: square5;
+}
+
+.p6 {
+    grid-area: square6;
+}
+
+p7 {
+    grid-area: square7;
+}
+
+p8 {
+    grid-area: square8;
 }
 
 body {
@@ -78,4 +157,8 @@ nav>ul>li>ul>li:hover a {
 
 li {
     color: white;
+}
+
+.Projects {
+    color: coral;
 }
