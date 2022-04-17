@@ -13,7 +13,7 @@ body {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
-    grid-template-areas: "nav nav nav" "main main main" "form form form" "footer footer footer";
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
 }
 
 header {
@@ -78,4 +78,58 @@ nav>ul>li>ul>li:hover a {
 
 li {
     color: white;
+}
+
+.Other {
+    color: coral;
+}
+
+.Contact {
+    color: coral;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+}
+
+form {
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 40vw;
+    text-align: center;
+    place-content: center;
+    align-items: center;
+    height: 35vh;
+    grid-area: form;
+    grid-gap: 0.5em;
+    gap: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+body {
+    background-color: #333;
+}
+
+input {
+    border: 1px solid #ddd;
+    color: #fff;
+    background-color: #555;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+textarea {
+    background-color: #555;
+    color: white;
+}
+
+.submit {
+    grid-column: 2;
+    margin-top: 0.5em;
+    background-color: rgb(119, 119, 119);
 }
