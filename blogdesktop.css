@@ -5,6 +5,12 @@
 
 h1 {
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: rgb(255, 234, 118);
+    font-style: italic;
 }
 
 body {
@@ -86,4 +92,59 @@ li {
 
 .Other {
     color: coral;
+}
+
+.myblogs {
+    margin-left: 1em;
+    grid-area: head;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "head head head head" "b1 b2 b3 b4";
+    color: white;
+    grid-area: main;
+    width: 100vw;
+    grid-gap: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bPost1 {
+    grid-area: b1;
+    margin-top: 2em;
+    margin-left: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.bPost2 {
+    grid-area: b2;
+    margin-top: 2em;
+    margin-left: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.bPost3 {
+    grid-area: b3;
+    margin-top: 2em;
+    margin-left: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.bPost4 {
+    grid-area: b4;
+    margin-top: 2em;
+    margin-left: 2em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.blog section img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }

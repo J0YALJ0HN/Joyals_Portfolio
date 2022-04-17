@@ -157,3 +157,51 @@ li:not(:last-of-type) {
     grid-area: img;
     display: flex;
 }
+
+.Contact {
+    color: coral;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+}
+
+form {
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50vw;
+    text-align: center;
+    place-content: center;
+    align-items: center;
+    height: 50vw;
+    grid-area: form;
+    grid-gap: 0.5em;
+    gap: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+input {
+    border: 1px solid #ddd;
+    color: #fff;
+    background-color: #555;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+textarea {
+    background-color: #555;
+    color: white;
+}
+
+.submit {
+    grid-column: 2;
+    margin-top: 0.5em;
+    background-color: rgb(119, 119, 119);
+}

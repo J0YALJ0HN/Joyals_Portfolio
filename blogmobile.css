@@ -161,3 +161,13 @@ li:not(:last-of-type) {
 .Blog {
     color: coral;
 }
+
+.blog section img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.blog section {
+    margin-bottom: 2em;
+}
