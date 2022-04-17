@@ -47,7 +47,6 @@ p {
 }
 
 body {
-    background-size: fit;
     background-image: url(images/kaleidoscope.gif);
     display: grid;
     grid-template-columns: 100%;
@@ -156,4 +155,67 @@ li:not(:last-of-type) {
     margin-top: 3em;
     grid-area: img;
     display: flex;
+}
+
+main {
+    grid-area: main;
+}
+
+p {
+    color: white;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: wheat;
+    text-decoration: underline;
+    margin-top: 1.5em;
+}
+
+.preVal {
+    text-align: center;
+}
+
+.indexValHTML,
+.indexCSS,
+.indexMobile,
+.portHTML,
+.portCSS,
+.portMobile,
+.contHTML,
+.contCSS,
+.contMobile,
+.blogHTML,
+.blogCSS,
+.blogMobile {
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin-top: 1em;
+}
+
+.indexVal,
+.indexCSSVal,
+.indexMobileVal,
+.portVal,
+.portCSSVal,
+.portMobileVal,
+.contVal,
+.contCSSVal,
+.contMobileVal,
+.blogVal,
+.blogCSSVal,
+.blogMobileVal {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.indexCSS {
+    margin-top: 1.5em;
 }
