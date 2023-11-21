@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyal's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/images/icons/iconmain.ico"/>
+    <style>
+        .contact-page section {
+            background-color: #d2e9f8d7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .contact-page h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .contact-page p {
+            font-size: 16px;
+        }
+
+        .contact-page form {
+            margin-top: 20px;
+        }
+
+        .contact-page label {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .contact-page input[type="text"],
+        .contact-page textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-page button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-bottom: 23em;
+        }
+
+        .contact-page button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-page .social-media {
+            margin-top: 20px;
+        }
+
+        .contact-page .social-media img {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="contact-page">
+    <div class="fade-in">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="current-page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+    <h2>Get in touch with me!</h2>
+    <p>Feel free to send a message using the form below or connect with me on social media.</p>
+    <form action="mailto:joyalplay@gmail.com" target="blank" method="get">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name"><br />
+    <label for="email">Email:</label><br />
+    <input type="text" id="email" name="email"><br />
+    <label for="message">Message:</label><br />
+    <textarea rows="5" cols="30" id="message" name="message"></textarea><br />
+    <button type="submit">Send Message</button>
+    </form>
+    <div class="social-media">
+        <a href="https://github.com/J0YALJ0HN"><img src="/images/icons/github.svg" alt="GitHub Icon" width="40px"></a>
+        <a href="https://www.linkedin.com/in/j0yalj0hn"><img src="/images/icons/linkedin.svg" alt="LinkedIn Icon" width="40px"></a>
+        <a href="https://www.instagram.com/jjjoyalll"><img src="/images/icons/instagram.svg" alt="Instagram Icon" width="40px"></a>
+    </div>
+</section>
+    
+    <footer>
+        <p>&copy; 2023 Joyal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
