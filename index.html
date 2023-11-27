@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyal's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel = "icon" type ="image/png" href = "/images/icons/iconmain.ico"/>
+</head>
+<body class="about-page">
+    <div class="fade-in">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="current-page">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="aboutme">
+        <h1>About me</h1>
+        <div class="center-content">
+            <img src="../images/skegflex.jpg" alt="Joyal's Image">
+            <p>Final year Computer Science student at Northampton University.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>My Professional Skills</h2>
+        <div id="skills-container">
+            <ul id="skills-list">
+            </ul>
+        </div>
+        <div id="navigation">
+            <button id="prev-button">&lt;</button>
+            <button id="next-button">&gt;</button>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2023 Joyal. All rights reserved.</p>
+    </footer>
+    </div>
+    <script>
+        const skillsArray = ["JavaScript", "HTML/CSS", "PHP", "Bash", "Android Studio Java", "Java", "SQL", "Python", "Git & Github"];
+        const skillsList = document.getElementById("skills-list");
+        const skillsContainer = document.getElementById("skills-container");
+        const prevButton = document.getElementById("prev-button");
+        const nextButton = document.getElementById("next-button");
+    
+        let currentIndex = 0;
+        const skillsPerPage = 3;
+    
+        function displaySkills() {
+            skillsList.innerHTML = ""; // Clear the current skills list
+    
+            for (let i = currentIndex; i < currentIndex + skillsPerPage && i < skillsArray.length; i++) {
+                const li = document.createElement("li");
+                li.textContent = skillsArray[i];
+                skillsList.appendChild(li);
+            }
+    
+            prevButton.disabled = currentIndex === 0;
+            nextButton.disabled = currentIndex + skillsPerPage >= skillsArray.length;
+        }
+    
+        function prevSkills() {
+            if (currentIndex > 0) {
+                currentIndex -= skillsPerPage;
+                displaySkills();
+            }
+        }
+    
+        function nextSkills() {
+            if (currentIndex + skillsPerPage < skillsArray.length) {
+                currentIndex += skillsPerPage;
+                displaySkills();
+            }
+        }
+    
+        // Add event listeners to the navigation buttons
+        prevButton.addEventListener("click", prevSkills);
+        nextButton.addEventListener("click", nextSkills);
+    
+        // Initial display of skills
+        displaySkills();
+    </script>
+
+</body>
+</html>
